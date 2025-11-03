@@ -99,6 +99,8 @@ const components = [
 ]
 
 function install(Vue) {
+  console.log(Vue)
+  console.log(bb)
   if (install.installed) {
     return
   }
