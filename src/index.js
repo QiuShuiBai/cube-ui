@@ -98,6 +98,13 @@ const components = [
   RecycleList
 ]
 
+/**
+ * Registers library components on a Vue constructor and prevents repeated installation.
+ *
+ * Calls each component's `install` method with the provided `Vue` constructor, skipping the `Radio` component,
+ * and sets `install.installed` to `true` to guard against re-entrancy.
+ * @param {Object} Vue - The Vue constructor to install components into.
+ */
 function install(Vue) {
   console.log(Vue)
   console.log(bb)
